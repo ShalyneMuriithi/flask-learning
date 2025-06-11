@@ -7,3 +7,7 @@ from app.route import routes_bp
 def get_users():
     users = User.query.all()
     return jsonify([user.to_dict() for user in users])
+
+
+
+# models, migrations, sqlAlchy
